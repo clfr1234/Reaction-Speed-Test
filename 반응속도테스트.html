@@ -130,7 +130,7 @@
             if (cnt <= 5) {
                 if (started) {
                     endedTime = new Date().getTime();
-                    let currentT = Number(endedTime - startedTime); // Convert to number
+                    let currentT = Number(endedTime - startedTime);
                     let currentLi = document.createElement('li');
                     currentLi.textContent = currentT + 'ms';
                     console.log("시작시간 : " + startedTime + "\n끝난시간 : " + endedTime + "\n걸린시간 : " + currentT);

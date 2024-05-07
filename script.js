@@ -41,10 +41,10 @@ function click() {
 
 }
 
-clickBtn.addEventListener('click', function () {
+clickBtn.addEventListener('mousedown', function () {
+    endedTime = new Date().getTime();
     if (cnt <= 5) {
         if (started) {
-            endedTime = new Date().getTime();
             let currentT = Number(endedTime - startedTime);
             let currentLi = document.createElement('li');
             currentLi.textContent = currentT + 'ms';
